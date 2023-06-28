@@ -118,7 +118,7 @@ name = Languagesystems;
 );
 features = (
 {
-code = "sub u10B61' @class1 by u10B61.alt01;\012sub u10B6B' [u10B6A u10B6D] by u10B6B.alt01;\012sub u10B61' @class2 by u10B61.alt02;\012";
+code = "ignore sub u10B61.alt01 u10B61';\012sub u10B61' @class1 by u10B61.alt01;\012sub u10B6B' [u10B6A u10B6D] by u10B6B.alt01;\012sub u10B61' @class2 by u10B61.alt02;\012";
 name = ccmp;
 },
 {
