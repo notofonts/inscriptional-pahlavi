@@ -1,13 +1,17 @@
 {
-.appVersion = "1357";
+.appVersion = "3202";
 classes = (
 {
 code = "u10B61 u10B63 u10B6A u10B6B u10B6D u10B6F u10B70 u10B72";
 name = class1;
 },
 {
-code = "u10B60 u10B62 u10B64 u10B65 u10B66 u10B67 u10B68 u10B69 u10B6C u10B6E u10B71";
+code = "u10B60\012u10B62\012u10B64\012u10B65\012u10B66\012u10B67\012u10B68\012u10B69\012u10B6C\012u10B6E\012u10B71\012";
 name = class2;
+},
+{
+code = "#u10B60\012u10B62\012#u10B64\012u10B65\012#u10B67\012u10B68\012u10B69\012#u10B6C\012#u10B6E\012#u10B71\012";
+name = kernclass2;
 }
 );
 copyright = "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/inscriptional-pahlavi)";
@@ -76,6 +80,10 @@ value = (
 );
 },
 {
+name = "Use Typo Metrics";
+value = 1;
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -98,10 +106,6 @@ value = "Noto is a trademark of Google Inc.";
 {
 name = versionString;
 value = "Version 2.003";
-},
-{
-name = "Use Typo Metrics";
-value = 1;
 }
 );
 date = "2021-12-16 18:43:51 +0000";
@@ -122,7 +126,7 @@ code = "ignore sub u10B61.alt01 u10B61';\012sub u10B61' @class1 by u10B61.alt01;
 name = ccmp;
 },
 {
-code = "# Automatic Code Start\012pos u10B61.alt02' <117 0 117 0> @class2 @class1;\012";
+code = "# Automatic Code Start\012pos u10B61.alt02' <117 0 117 0> @kernclass2 @class1;\012pos u10B61.alt02' <180 0 180 0> u10B66 @class1;\012";
 name = kern;
 }
 );
