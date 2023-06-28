@@ -2,7 +2,7 @@
 
 Fontbakery version: 0.8.13
 
-<details><summary><b>[10] NotoSansInscriptionalPahlavi-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+<details><summary><b>[11] NotoSansInscriptionalPahlavi-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -16,6 +16,64 @@ Fontbakery version: 0.8.13
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
 
 The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check that texts shape as per expectation (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/shaping/regression">com.google.fonts/check/shaping/regression</a>)</summary><div>
+
+
+* 🔥 **FAIL** qa/shaping_tests/inscriptional-pahlavi.json: Expected and actual shaping not matching
+<div class="shaping">
+
+
+<style type="text/css">
+    @font-face {font-family: "TestFont"; src: url(../../fonts/NotoSansInscriptionalPahlavi/googlefonts/ttf/NotoSansInscriptionalPahlavi-Regular.ttf);}
+    .tf { font-family: "TestFont"; }
+    .shaping pre { font-size: 1.2rem; }
+    .shaping li {
+        font-size: 1.2rem;
+        border-top: 1px solid #ddd;
+        padding: 12px;
+        margin-top: 12px;
+    }
+    .shaping-svg {
+        height: 100px;
+        margin: 10px;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+</style>
+
+<h4>qa/shaping_tests/inscriptional-pahlavi.json: Expected and actual shaping not matching</h4>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">𐭡𐭤𐭡</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: u10B61=2+892|u10B64=1+859|u10B61.alt02=0@117,0+467</pre>
+
+
+
+<pre>Got     : u10B61=2+892|u10B64=1+859|u10B61.alt02=0+350</pre>
+
+
+
+<pre>                                                  ++++++ ^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2101 2421" transform="matrix(1 0 0 -1 0 0)">
+<path d="M15.0,-144.0L15.0,-70.0L718.0,-70.0L718.0,336.0L807.0,336.0L807.0,-144.0L15.0,-144.0Z" transform="translate(0, 852)"/>
+<path d="M572.0,-10.0Q518.0,-10.0 486.0,4.0Q454.0,18.0 440.5,52.0Q427.0,86.0 427.0,146.0L427.0,440.0Q363.0,472.0 311.0,472.0Q232.0,472.0 190.5,427.5Q149.0,383.0 149.0,297.0Q149.0,250.0 160.0,197.5Q171.0,145.0 189.0,94.0Q207.0,43.0 229.0,0.0L139.0,0.0Q117.0,39.0 99.0,91.0Q81.0,143.0 70.5,197.5Q60.0,252.0 60.0,297.0Q60.0,374.0 89.5,429.5Q119.0,485.0 173.0,515.5Q227.0,546.0 299.0,546.0Q352.0,546.0 391.0,535.0Q430.0,524.0 462.0,507.5Q494.0,491.0 525.0,474.0Q556.0,457.0 592.0,446.0Q628.0,435.0 675.0,435.0Q710.0,435.0 730.0,455.5Q750.0,476.0 750.0,507.0Q750.0,524.0 746.0,536.0L835.0,536.0Q837.0,526.0 838.0,518.0Q839.0,510.0 839.0,505.0Q839.0,435.0 793.0,398.0Q747.0,361.0 673.0,361.0Q587.0,361.0 515.0,394.0L515.0,141.0Q515.0,97.0 526.0,80.5Q537.0,64.0 577.0,64.0Q600.0,64.0 625.5,66.5Q651.0,69.0 679.0,74.0L679.0,0.0Q650.0,-4.0 623.5,-7.0Q597.0,-10.0 572.0,-10.0Z" transform="translate(892, 852)"/>
+<path d="M-527.0,-144.0L-527.0,-70.0L177.0,-70.0L177.0,336.0L265.0,336.0L265.0,-144.0L-527.0,-144.0Z" transform="translate(1751, 852)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2218 2421" transform="matrix(1 0 0 -1 0 0)">
+<path d="M15.0,-144.0L15.0,-70.0L718.0,-70.0L718.0,336.0L807.0,336.0L807.0,-144.0L15.0,-144.0Z" transform="translate(0, 852)"/>
+<path d="M572.0,-10.0Q518.0,-10.0 486.0,4.0Q454.0,18.0 440.5,52.0Q427.0,86.0 427.0,146.0L427.0,440.0Q363.0,472.0 311.0,472.0Q232.0,472.0 190.5,427.5Q149.0,383.0 149.0,297.0Q149.0,250.0 160.0,197.5Q171.0,145.0 189.0,94.0Q207.0,43.0 229.0,0.0L139.0,0.0Q117.0,39.0 99.0,91.0Q81.0,143.0 70.5,197.5Q60.0,252.0 60.0,297.0Q60.0,374.0 89.5,429.5Q119.0,485.0 173.0,515.5Q227.0,546.0 299.0,546.0Q352.0,546.0 391.0,535.0Q430.0,524.0 462.0,507.5Q494.0,491.0 525.0,474.0Q556.0,457.0 592.0,446.0Q628.0,435.0 675.0,435.0Q710.0,435.0 730.0,455.5Q750.0,476.0 750.0,507.0Q750.0,524.0 746.0,536.0L835.0,536.0Q837.0,526.0 838.0,518.0Q839.0,510.0 839.0,505.0Q839.0,435.0 793.0,398.0Q747.0,361.0 673.0,361.0Q587.0,361.0 515.0,394.0L515.0,141.0Q515.0,97.0 526.0,80.5Q537.0,64.0 577.0,64.0Q600.0,64.0 625.5,66.5Q651.0,69.0 679.0,74.0L679.0,0.0Q650.0,-4.0 623.5,-7.0Q597.0,-10.0 572.0,-10.0Z" transform="translate(892, 852)"/>
+<path d="M-527.0,-144.0L-527.0,-70.0L177.0,-70.0L177.0,336.0L265.0,336.0L265.0,-144.0L-527.0,-144.0Z" transform="translate(1868, 852)"/>
+</svg>
+
+
+</div> [code: shaping-regression]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -120,8 +178,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-short-s
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 3 | 7 | 117 | 7 | 112 | 0 |
-| 0% | 1% | 3% | 48% | 3% | 46% | 0% |
+| 0 | 4 | 7 | 117 | 7 | 111 | 0 |
+| 0% | 2% | 3% | 48% | 3% | 45% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
