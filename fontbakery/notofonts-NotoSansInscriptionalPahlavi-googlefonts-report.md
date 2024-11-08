@@ -1,18 +1,19 @@
 ## FontBakery report
 
-fontbakery version: 0.12.6
+fontbakery version: 0.12.10
 
 
 
-## Experimental checks
-
-These won't break the CI job for now, but will become effective after some time if nobody raises any concern.
 
 
-<details><summary>[1] NotoSansInscriptionalPahlavi-Regular.ttf</summary>
+## Check results
+
+
+
+<details><summary>[11] NotoSansInscriptionalPahlavi-Regular.ttf</summary>
 <div>
 <details>
-    <summary>⚠️ <b>WARN</b> Validate location, size and resolution of article images. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.article.html#"></a></summary>
+    <summary>🔥 <b>FAIL</b> Check for presence of an ARTICLE.en_us.html file <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.description.html#"></a></summary>
     <div>
 
 
@@ -21,25 +22,19 @@ These won't break the CI job for now, but will become effective after some time 
 
 
 
-* ⚠️ **WARN** <p>Family metadata at fonts/NotoSansInscriptionalPahlavi/googlefonts/ttf does not have an article.</p>
- [code: lacks-article]
+* 🔥 **FAIL** <p>This is a Noto font but it lacks an ARTICLE.en_us.html file.</p>
+ [code: missing-article]
+
+
+
+* 🔥 **FAIL** <p>This is a Noto font but it lacks a DESCRIPTION.en_us.html file.</p>
+ [code: missing-description]
 
 
 
 </div>
 </details>
-</div>
-</details>
 
-
-
-
-## All other checks
-
-
-
-<details><summary>[11] NotoSansInscriptionalPahlavi-Regular.ttf</summary>
-<div>
 <details>
     <summary>🔥 <b>FAIL</b> Check that texts shape as per expectation <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/shaping.html#"></a></summary>
     <div>
@@ -58,33 +53,10 @@ These won't break the CI job for now, but will become effective after some time 
 Got     : u10B61=2+892|u10B64=1+859|u10B61.alt02=0+350
                                                   ++++++ ^^^
 </code></pre>
-<p>Got: <svg style="height:100px;margin:10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 -546 2016 1615" transform="matrix(1 0 0 -1 0 0)"> <defs> <path id="g5" d="M15.0,-144.0L15.0,-70.0L718.0,-70.0L718.0,336.0L807.0,336.0L807.0,-144.0L15.0,-144.0Z"/> <path id="g8" d="M572.0,-10.0Q518.0,-10.0 486.0,4.0Q454.0,18.0 440.5,52.0Q427.0,86.0 427.0,146.0L427.0,440.0Q363.0,472.0 311.0,472.0Q232.0,472.0 190.5,427.5Q149.0,383.0 149.0,297.0Q149.0,250.0 160.0,197.5Q171.0,145.0 189.0,94.0Q207.0,43.0 229.0,0.0L139.0,0.0Q117.0,39.0 99.0,91.0Q81.0,143.0 70.5,197.5Q60.0,252.0 60.0,297.0Q60.0,374.0 89.5,429.5Q119.0,485.0 173.0,515.5Q227.0,546.0 299.0,546.0Q352.0,546.0 391.0,535.0Q430.0,524.0 462.0,507.5Q494.0,491.0 525.0,474.0Q556.0,457.0 592.0,446.0Q628.0,435.0 675.0,435.0Q710.0,435.0 730.0,455.5Q750.0,476.0 750.0,507.0Q750.0,524.0 746.0,536.0L835.0,536.0Q837.0,526.0 838.0,518.0Q839.0,510.0 839.0,505.0Q839.0,435.0 793.0,398.0Q747.0,361.0 673.0,361.0Q587.0,361.0 515.0,394.0L515.0,141.0Q515.0,97.0 526.0,80.5Q537.0,64.0 577.0,64.0Q600.0,64.0 625.5,66.5Q651.0,69.0 679.0,74.0L679.0,0.0Q650.0,-4.0 623.5,-7.0Q597.0,-10.0 572.0,-10.0Z"/> <path id="g33" d="M-527.0,-144.0L-527.0,-70.0L177.0,-70.0L177.0,336.0L265.0,336.0L265.0,-144.0L-527.0,-144.0Z"/> </defs> <g transform="translate(0,0)"> <use href="#g5"/> </g> <g transform="translate(892,0)"> <use href="#g8"/> </g> <g transform="translate(1751,0)"> <use href="#g33"/> </g> </svg>  Expected: <svg style="height:100px;margin:10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 -546 2133 1615" transform="matrix(1 0 0 -1 0 0)"> <defs> <path id="g5" d="M15.0,-144.0L15.0,-70.0L718.0,-70.0L718.0,336.0L807.0,336.0L807.0,-144.0L15.0,-144.0Z"/> <path id="g8" d="M572.0,-10.0Q518.0,-10.0 486.0,4.0Q454.0,18.0 440.5,52.0Q427.0,86.0 427.0,146.0L427.0,440.0Q363.0,472.0 311.0,472.0Q232.0,472.0 190.5,427.5Q149.0,383.0 149.0,297.0Q149.0,250.0 160.0,197.5Q171.0,145.0 189.0,94.0Q207.0,43.0 229.0,0.0L139.0,0.0Q117.0,39.0 99.0,91.0Q81.0,143.0 70.5,197.5Q60.0,252.0 60.0,297.0Q60.0,374.0 89.5,429.5Q119.0,485.0 173.0,515.5Q227.0,546.0 299.0,546.0Q352.0,546.0 391.0,535.0Q430.0,524.0 462.0,507.5Q494.0,491.0 525.0,474.0Q556.0,457.0 592.0,446.0Q628.0,435.0 675.0,435.0Q710.0,435.0 730.0,455.5Q750.0,476.0 750.0,507.0Q750.0,524.0 746.0,536.0L835.0,536.0Q837.0,526.0 838.0,518.0Q839.0,510.0 839.0,505.0Q839.0,435.0 793.0,398.0Q747.0,361.0 673.0,361.0Q587.0,361.0 515.0,394.0L515.0,141.0Q515.0,97.0 526.0,80.5Q537.0,64.0 577.0,64.0Q600.0,64.0 625.5,66.5Q651.0,69.0 679.0,74.0L679.0,0.0Q650.0,-4.0 623.5,-7.0Q597.0,-10.0 572.0,-10.0Z"/> <path id="g33" d="M-527.0,-144.0L-527.0,-70.0L177.0,-70.0L177.0,336.0L265.0,336.0L265.0,-144.0L-527.0,-144.0Z"/> </defs> <g transform="translate(0,0)"> <use href="#g5"/> </g> <g transform="translate(892,0)"> <use href="#g8"/> </g> <g transform="translate(1868,0)"> <use href="#g33"/> </g> </svg></p>
+<p>Got: <svg style="height:100px;margin:10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 -352 2101 1421" transform="matrix(1 0 0 -1 0 0)"> <defs> <path id="g5" d="M15.0,-144.0L15.0,-70.0L718.0,-70.0L718.0,336.0L807.0,336.0L807.0,-144.0L15.0,-144.0Z"/> <path id="g8" d="M572.0,-10.0Q518.0,-10.0 486.0,4.0Q454.0,18.0 440.5,52.0Q427.0,86.0 427.0,146.0L427.0,440.0Q363.0,472.0 311.0,472.0Q232.0,472.0 190.5,427.5Q149.0,383.0 149.0,297.0Q149.0,250.0 160.0,197.5Q171.0,145.0 189.0,94.0Q207.0,43.0 229.0,0.0L139.0,0.0Q117.0,39.0 99.0,91.0Q81.0,143.0 70.5,197.5Q60.0,252.0 60.0,297.0Q60.0,374.0 89.5,429.5Q119.0,485.0 173.0,515.5Q227.0,546.0 299.0,546.0Q352.0,546.0 391.0,535.0Q430.0,524.0 462.0,507.5Q494.0,491.0 525.0,474.0Q556.0,457.0 592.0,446.0Q628.0,435.0 675.0,435.0Q710.0,435.0 730.0,455.5Q750.0,476.0 750.0,507.0Q750.0,524.0 746.0,536.0L835.0,536.0Q837.0,526.0 838.0,518.0Q839.0,510.0 839.0,505.0Q839.0,435.0 793.0,398.0Q747.0,361.0 673.0,361.0Q587.0,361.0 515.0,394.0L515.0,141.0Q515.0,97.0 526.0,80.5Q537.0,64.0 577.0,64.0Q600.0,64.0 625.5,66.5Q651.0,69.0 679.0,74.0L679.0,0.0Q650.0,-4.0 623.5,-7.0Q597.0,-10.0 572.0,-10.0Z"/> <path id="g33" d="M-527.0,-144.0L-527.0,-70.0L177.0,-70.0L177.0,336.0L265.0,336.0L265.0,-144.0L-527.0,-144.0Z"/> </defs> <g transform="translate(0,0)"> <use href="#g5"/> </g> <g transform="translate(892,0)"> <use href="#g8"/> </g> <g transform="translate(1751,0)"> <use href="#g33"/> </g> </svg>  Expected: <svg style="height:100px;margin:10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 -352 2335 1421" transform="matrix(1 0 0 -1 0 0)"> <defs> <path id="g5" d="M15.0,-144.0L15.0,-70.0L718.0,-70.0L718.0,336.0L807.0,336.0L807.0,-144.0L15.0,-144.0Z"/> <path id="g8" d="M572.0,-10.0Q518.0,-10.0 486.0,4.0Q454.0,18.0 440.5,52.0Q427.0,86.0 427.0,146.0L427.0,440.0Q363.0,472.0 311.0,472.0Q232.0,472.0 190.5,427.5Q149.0,383.0 149.0,297.0Q149.0,250.0 160.0,197.5Q171.0,145.0 189.0,94.0Q207.0,43.0 229.0,0.0L139.0,0.0Q117.0,39.0 99.0,91.0Q81.0,143.0 70.5,197.5Q60.0,252.0 60.0,297.0Q60.0,374.0 89.5,429.5Q119.0,485.0 173.0,515.5Q227.0,546.0 299.0,546.0Q352.0,546.0 391.0,535.0Q430.0,524.0 462.0,507.5Q494.0,491.0 525.0,474.0Q556.0,457.0 592.0,446.0Q628.0,435.0 675.0,435.0Q710.0,435.0 730.0,455.5Q750.0,476.0 750.0,507.0Q750.0,524.0 746.0,536.0L835.0,536.0Q837.0,526.0 838.0,518.0Q839.0,510.0 839.0,505.0Q839.0,435.0 793.0,398.0Q747.0,361.0 673.0,361.0Q587.0,361.0 515.0,394.0L515.0,141.0Q515.0,97.0 526.0,80.5Q537.0,64.0 577.0,64.0Q600.0,64.0 625.5,66.5Q651.0,69.0 679.0,74.0L679.0,0.0Q650.0,-4.0 623.5,-7.0Q597.0,-10.0 572.0,-10.0Z"/> <path id="g33" d="M-527.0,-144.0L-527.0,-70.0L177.0,-70.0L177.0,336.0L265.0,336.0L265.0,-144.0L-527.0,-144.0Z"/> </defs> <g transform="translate(0,0)"> <use href="#g5"/> </g> <g transform="translate(892,0)"> <use href="#g8"/> </g> <g transform="translate(1868,0)"> <use href="#g33"/> </g> </svg></p>
 </li>
 </ul>
  [code: shaping-regression]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>🔥 <b>FAIL</b> Check for presence of an ARTICLE.en_us.html file <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.description.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* 🔥 **FAIL** <p>This is a Noto font but it lacks an ARTICLE.en_us.html file.</p>
- [code: missing-article]
-
-
-
-* 🔥 **FAIL** <p>This is a Noto font but it lacks a DESCRIPTION.en_us.html file.</p>
- [code: missing-description]
 
 
 
@@ -119,7 +91,7 @@ Got     : u10B61=2+892|u10B64=1+859|u10B61.alt02=0+350
 </details>
 
 <details>
-    <summary>⚠️ <b>WARN</b> Check math signs have the same width. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#"></a></summary>
+    <summary>⚠️ <b>WARN</b> Validate size, and resolution of article images, and ensure article page has minimum length and includes visual assets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.article.html#"></a></summary>
     <div>
 
 
@@ -128,11 +100,102 @@ Got     : u10B61=2+892|u10B64=1+859|u10B61.alt02=0+350
 
 
 
-* ⚠️ **WARN** <p>The most common width is 572 among a set of 6 math glyphs.
-The following math glyphs have a different width, though:</p>
-<p>Width = 322:
-minus</p>
- [code: width-outliers]
+* ⚠️ **WARN** <p>Family metadata at fonts/NotoSansInscriptionalPahlavi/googlefonts/ttf does not have an article.</p>
+ [code: lacks-article]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.subsets.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The following codepoints supported by the font are not covered by
+any subsets defined in the font's metadata file, and will never
+be served. You can solve this by either manually adding additional
+subset declarations to METADATA.pb, or by editing the glyphset
+definitions.</p>
+<ul>
+<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, cherokee, coptic</li>
+<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: todhri, duployan, canadian-aboriginal, tifinagh, old-permic, coptic, syriac, malayalam, tai-le, hebrew, math</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
+<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
+<li>U+0326 COMBINING COMMA BELOW: try adding math</li>
+<li>U+0327 COMBINING CEDILLA: try adding math</li>
+<li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
+</ul>
+<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>inscriptional-pahlavi</code>, <code>latin</code>, <code>latin-ext</code></p>
+ [code: unreachable-subsetting]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Combined length of family and style must not exceed 32 characters. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.name.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>Name ID 6 'NotoSansInscriptionalPahlavi-Regular' exceeds 27 characters. This has been found to cause problems with PostScript printers, especially on Mac platforms.</p>
+ [code: nameid6-too-long]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Ensure dotted circle glyph is present and can attach marks. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/shaping.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>No dotted circle glyph present</p>
+ [code: missing-dotted-circle]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/shaping.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌</p>
+<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̧̀ į̧́ į̧̂ į̧̃</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Bete-Bendi (Latn, 100,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Zapotec (Latn, 490,000 speakers), Han (Latn, 6 speakers), Koonzime (Latn, 40,000 speakers), Vute (Latn, 21,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ebira (Latn, 2,200,000 speakers), Igbo (Latn, 27,823,640 speakers), Mundani (Latn, 34,000 speakers), Kom (Latn, 360,685 speakers), Ekpeye (Latn, 226,000 speakers), Dan (Latn, 1,099,244 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Heiltsuk (Latn, 300 speakers), Ngbaka (Latn, 1,020,000 speakers), Mango (Latn, 77,000 speakers), Lugbara (Latn, 2,200,000 speakers), Aghem (Latn, 38,843 speakers), Ma’di (Latn, 584,000 speakers), Dii (Latn, 71,000 speakers), Ejagham (Latn, 120,000 speakers), Nateni (Latn, 100,000 speakers), Avokaya (Latn, 100,000 speakers), Navajo (Latn, 166,319 speakers), Cicipu (Latn, 44,000 speakers), Sar (Latn, 500,000 speakers), Mfumte (Latn, 79,000 speakers), Basaa (Latn, 332,940 speakers), Nzakara (Latn, 50,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Teke-Ebo (Latn, 260,000 speakers), Makaa (Latn, 221,000 speakers), Bafut (Latn, 158,146 speakers), Southern Kisi (Latn, 360,000 speakers), Kaska (Latn, 125 speakers), Gulay (Latn, 250,478 speakers), Fur (Latn, 1,230,163 speakers), Yala (Latn, 200,000 speakers), South Central Banda (Latn, 244,000 speakers).</p>
+ [code: soft-dotted]
 
 
 
@@ -474,103 +537,6 @@ minus</p>
 </details>
 
 <details>
-    <summary>⚠️ <b>WARN</b> Ensure dotted circle glyph is present and can attach marks. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/shaping.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>No dotted circle glyph present</p>
- [code: missing-dotted-circle]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/shaping.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌</p>
-<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̧̀ į̧́ į̧̂ į̧̃</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Mundani (Latn, 34,000 speakers), Ejagham (Latn, 120,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Lugbara (Latn, 2,200,000 speakers), Yala (Latn, 200,000 speakers), Igbo (Latn, 27,823,640 speakers), Nateni (Latn, 100,000 speakers), Sar (Latn, 500,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Dii (Latn, 71,000 speakers), Avokaya (Latn, 100,000 speakers), Nzakara (Latn, 50,000 speakers), Fur (Latn, 1,230,163 speakers), Dan (Latn, 1,099,244 speakers), Southern Kisi (Latn, 360,000 speakers), Mfumte (Latn, 79,000 speakers), Zapotec (Latn, 490,000 speakers), Basaa (Latn, 332,940 speakers), Navajo (Latn, 166,319 speakers), Kom (Latn, 360,685 speakers), Makaa (Latn, 221,000 speakers), Ekpeye (Latn, 226,000 speakers), Cicipu (Latn, 44,000 speakers), Bafut (Latn, 158,146 speakers), Ma’di (Latn, 584,000 speakers), Gulay (Latn, 250,478 speakers), Vute (Latn, 21,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Mango (Latn, 77,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Koonzime (Latn, 40,000 speakers), Aghem (Latn, 38,843 speakers), South Central Banda (Latn, 244,000 speakers), Ebira (Latn, 2,200,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Ngbaka (Latn, 1,020,000 speakers).</p>
- [code: soft-dotted]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.subsets.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>The following codepoints supported by the font are not covered by
-any subsets defined in the font's metadata file, and will never
-be served. You can solve this by either manually adding additional
-subset declarations to METADATA.pb, or by editing the glyphset
-definitions.</p>
-<ul>
-<li>U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal</li>
-<li>U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition</li>
-<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: malayalam, syriac, tifinagh, old-permic, canadian-aboriginal, math, coptic, tai-le</li>
-<li>U+030A COMBINING RING ABOVE: try adding syriac</li>
-<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
-<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
-<li>U+0326 COMBINING COMMA BELOW: not included in any glyphset definition</li>
-<li>U+0327 COMBINING CEDILLA: not included in any glyphset definition</li>
-<li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
-</ul>
-<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>inscriptional-pahlavi</code>, <code>latin</code>, <code>latin-ext</code></p>
- [code: unreachable-subsetting]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Combined length of family and style must not exceed 32 characters. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.name.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>Name ID 6 'NotoSansInscriptionalPahlavi-Regular' exceeds 27 characters. This has been found to cause problems with PostScript printers, especially on Mac platforms.</p>
- [code: nameid6-too-long]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>⚠️ <b>WARN</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.meta.html#"></a></summary>
     <div>
 
@@ -597,7 +563,7 @@ definitions.</p>
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 2 | 10 | 116 | 6 | 117 | 0 | 
+| 0 | 0 | 2 | 9 | 116 | 6 | 118 | 0 | 
 | 0% | 0% | 1% | 4% | 46% | 2% | 47% | 0% | 
 
 
