@@ -1,9 +1,0 @@
-buildVariable: false
-familyName: Noto Sans Inscriptional Pahlavi
-googleFonts: true
-includeSubsets:
-- from: Noto Sans
-  name: GF_Latin_Core
-recipeProvider: noto
-sources:
-- NotoSansInscriptionalPahlavi.glyphs
